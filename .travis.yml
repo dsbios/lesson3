@@ -1,9 +1,9 @@
 dist: focal
 
-jobs: 
+jobs:
   include:
     - stage: build docker file
-       script: 
-       - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --password-stdin
+      script:
+       - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --passwor>
        - docker build -t $DOCKER_USERNAME/lesson2 .
        - docker push $DOCKER_USERMANE/lesson2
