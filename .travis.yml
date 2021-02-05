@@ -1,4 +1,4 @@
-dist: xentia
+dist: xenia
 
 jobs:
   include:
