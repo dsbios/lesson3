@@ -5,5 +5,5 @@ jobs:
     - stage: build docker file
        script: 
        - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --password-stdin
-       - docker build -t $DOCKER_USERNAME/travis_ci_test .
-       - docker push $DOCKER_USERMANE/travis_ci_test
+       - docker build -t $DOCKER_USERNAME/dsbios/lesson2 .
+       - docker push $DOCKER_USERMANE/dsbios/lesson2
