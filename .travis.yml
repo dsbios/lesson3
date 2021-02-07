@@ -6,4 +6,4 @@ jobs:
       script:
        - echo "$PASSWORD" | docker login -u "$USERNAME" --password-stdin
        - docker build -t $USERNAME/lesson3 .
-       - docker push $USERMANE/lesson3
+       - docker push $USERNAME/lesson3
