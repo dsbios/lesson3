@@ -1,4 +1,4 @@
-dist: xenia
+dist: precise
 
 jobs:
   include:
